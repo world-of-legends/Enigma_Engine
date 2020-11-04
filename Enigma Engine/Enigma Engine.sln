@@ -1,0 +1,15 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 16
+VisualStudioVersion = 16.0.0.0
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enigma_Engine.Windows", "Enigma_Engine.Windows\Enigma_Engine.Windows.csproj", "{5F13ACFB-EBFA-4EFE-98DD-569591CBD592}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enigma_Engine", "Enigma_Engine\Enigma_Engine.csproj", "{D2E0B536-A9A4-4A2F-BCDE-A0F469CE77A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enigma_Engine.Linux", "Enigma_Engine.Linux\Enigma_Engine.Linux.csproj", "{6FC5714A-0B91-438B-89E2-BA588DE05A88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enigma_Engine.macOS", "Enigma_Engine.macOS\Enigma_Engine.macOS.csproj", "{4D13C9B6-9CE9-40EC-9281-2181ABF53A45}"
+EndProject
+Global
+EndGlobal
