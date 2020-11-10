@@ -1,0 +1,5 @@
+obj\
+Enigma Engine\Enigma Engine\obj\
+*.cache
+*.props
+*.assets.cache

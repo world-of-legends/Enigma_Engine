@@ -2,7 +2,7 @@
 
 namespace Enigma
 {
-    public class Class1
+    public class BaseEntity
     {
     }
 }

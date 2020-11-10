@@ -1,0 +1,10 @@
+# Entity System in Enigma Engine
+This system looks like Source Entity and I/O System. In Editor you have figures and entities.
+## Figures
+**Figure** - is a just geometric figure without any information (like Brush in Source).
+## Entities
+**Entity** - is a object with information (like Entity in Source). It can be model, particles, trigger or other. Has three types of entities:
+- Logical - is a entity which invisible in the game. It used for give some information to the game ot other entities.
+- Model - is a entity which have model in the game. It can be static model, animating model, door with model and other.
+- Figure - is a entity created from Figure. More often this type of entity using for creating triggers.
+The main difference between Figure and Entity is that the Entity has a script.
