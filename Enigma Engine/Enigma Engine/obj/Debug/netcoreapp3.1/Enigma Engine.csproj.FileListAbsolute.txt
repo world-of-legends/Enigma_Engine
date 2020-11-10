@@ -1,0 +1,9 @@
+C:\Users\User\Desktop\World of Legends\Enigma_Engine\Enigma Engine\Enigma Engine\bin\Debug\netcoreapp3.1\Enigma Engine.deps.json
+C:\Users\User\Desktop\World of Legends\Enigma_Engine\Enigma Engine\Enigma Engine\bin\Debug\netcoreapp3.1\Enigma Engine.dll
+C:\Users\User\Desktop\World of Legends\Enigma_Engine\Enigma Engine\Enigma Engine\bin\Debug\netcoreapp3.1\Enigma Engine.pdb
+C:\Users\User\Desktop\World of Legends\Enigma_Engine\Enigma Engine\Enigma Engine\obj\Debug\netcoreapp3.1\Enigma Engine.csprojAssemblyReference.cache
+C:\Users\User\Desktop\World of Legends\Enigma_Engine\Enigma Engine\Enigma Engine\obj\Debug\netcoreapp3.1\Enigma Engine.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\World of Legends\Enigma_Engine\Enigma Engine\Enigma Engine\obj\Debug\netcoreapp3.1\Enigma Engine.AssemblyInfo.cs
+C:\Users\User\Desktop\World of Legends\Enigma_Engine\Enigma Engine\Enigma Engine\obj\Debug\netcoreapp3.1\Enigma Engine.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\World of Legends\Enigma_Engine\Enigma Engine\Enigma Engine\obj\Debug\netcoreapp3.1\Enigma Engine.dll
+C:\Users\User\Desktop\World of Legends\Enigma_Engine\Enigma Engine\Enigma Engine\obj\Debug\netcoreapp3.1\Enigma Engine.pdb
