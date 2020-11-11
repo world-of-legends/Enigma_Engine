@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Enigma
 {
@@ -9,12 +8,15 @@ namespace Enigma
         String,
         Int,
         Float,
+        Boolean,
         Angle,
         Position,
         List,
         Entity,
         Model,
         Sound,
+        Particle,
+        Material,
         Color,
         Script
     }

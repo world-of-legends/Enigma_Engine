@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Enigma
 {
-    public class ActionData
+    public struct ActionData
     {
+        public BaseEntity activator;
+        public string parameter;
     }
 }
