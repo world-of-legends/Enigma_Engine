@@ -14,9 +14,9 @@ namespace Enigma
 
         public void DrawCube()
         {
-            GeometricPrimitive cube = GeometricPrimitive.Cube.New(Level.Graphics);
-            cube.Draw(new GraphicsContext(Level.Graphics), new EffectInstance(
-                new Effect(Level.Graphics, new Stride.Shaders.EffectBytecode())));
+            GeometricPrimitive cube = GeometricPrimitive.Cube.New(RuntimeLevel.Graphics);
+            cube.Draw(new GraphicsContext(RuntimeLevel.Graphics), new EffectInstance(
+                new Effect(RuntimeLevel.Graphics, new Stride.Shaders.EffectBytecode())));
         }
 
         /// <summary>
@@ -29,19 +29,19 @@ namespace Enigma
             VertexDeclaration layout = new VertexDeclaration(VertexElement.Position<Vector3>(), VertexElement.TextureCoordinate<Vector2>());
 
             // Create the vertex buffer from an array of vertices
-            var vertices = new VertexPositionTexture[vertexCount];
-            var vertexBuffer = Buffer.Vertex.New(Level.Graphics, vertices);
+            VertexPositionTexture[] vertices = new VertexPositionTexture[vertexCount];
+            Buffer<VertexPositionTexture> vertexBuffer = Buffer.Vertex.New(RuntimeLevel.Graphics, vertices);
 
             // Create a vertex buffer binding
-            var vertexBufferBinding = new VertexBufferBinding(vertexBuffer, layout, vertexCount);
+            VertexBufferBinding vertexBufferBinding = new VertexBufferBinding(vertexBuffer, layout, vertexCount);
 
-            var pipelineStateDescription = new PipelineStateDescription();
-            var pipelineState = PipelineState.New(Level.Graphics, ref pipelineStateDescription);
+            PipelineStateDescription pipelineStateDescription = new PipelineStateDescription();
+            PipelineState pipelineState = PipelineState.New(RuntimeLevel.Graphics, ref pipelineStateDescription);
             pipelineStateDescription.InputElements = new VertexBufferBinding[] { vertexBufferBinding }.CreateInputElements();
             pipelineStateDescription.PrimitiveType = PrimitiveType.TriangleStrip;
 
             // Create and set a PipelineState object
-            CommandList commandList = Level.ListCommand;
+            CommandList commandList = RuntimeLevel.ListCommand;
             commandList.SetPipelineState(pipelineState);
 
             // Bind the vertex buffer to the pipeline

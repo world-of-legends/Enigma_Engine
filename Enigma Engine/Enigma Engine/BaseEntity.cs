@@ -18,13 +18,18 @@ namespace Enigma
         /// Method called when new empty entity creating in Editor
         /// </summary>
         public abstract void CreateInEditor();
-        public abstract void OnCreate();
 
         #region Actions
         [Action(ActionName = "Destroy")]
         public virtual void Destroy(ActionData data)
         {
-            Level.entities.Remove(this);
+            RuntimeLevel.entities.Remove(this);
+        }
+
+        [Action(ActionName = "Create")]
+        public virtual void Create(ActionData data)
+        {
+            RuntimeLevel.entities.Add(this);
         }
         #endregion
     }

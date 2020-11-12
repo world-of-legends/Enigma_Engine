@@ -1,4 +1,5 @@
 ﻿using Stride.Core.Mathematics;
+using Stride.Engine;
 using System;
 
 namespace Enigma
@@ -6,6 +7,7 @@ namespace Enigma
     public abstract class BaseModelEntity : BaseEntity
     {
         public string editorModel;
+        private Entity modelEntity;
 
         #region Values
         [Value(ValueName = "Type of Physics", Type = ValueType.List)]
@@ -18,10 +20,12 @@ namespace Enigma
         {
             editorModel = "";
             physicsType = 0;
+            modelEntity = new Entity();
         }
-        public override void OnCreate()
+        public override void Create(ActionData data)
         {
-            //pass
+
+            base.Create(data);
         }
         public override void Destroy(ActionData data)
         {

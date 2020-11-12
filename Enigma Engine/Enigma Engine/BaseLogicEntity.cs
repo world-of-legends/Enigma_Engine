@@ -11,9 +11,5 @@ namespace Enigma
         {
             editorTexture = "";
         }
-        public override void OnCreate()
-        {
-            //pass
-        }
     }
 }
