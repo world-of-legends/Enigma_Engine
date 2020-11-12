@@ -24,7 +24,7 @@ namespace Enigma
         [Action(ActionName = "Destroy")]
         public virtual void Destroy(ActionData data)
         {
-            //delete this entity from global enteties
+            Level.entities.Remove(this);
         }
         #endregion
     }

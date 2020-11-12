@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enigma Engine", "Enigma Engine\Enigma Engine.csproj", "{30A995E7-43B0-4739-9BE3-A69A845DAF81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enigma Engine", "Enigma Engine\Enigma Engine.csproj", "{30A995E7-43B0-4739-9BE3-A69A845DAF81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enigma Engine.UIApp", "Enigma Engine.UIApp\Enigma Engine.UIApp.csproj", "{ED1E07E6-F666-4ACD-9687-B791A9713F1B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enigma Engine.Launcher", "Enigma Engine.Launcher\Enigma Engine.Launcher.csproj", "{85BCCC9C-E96C-4315-AC8D-79EE7B070511}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{30A995E7-43B0-4739-9BE3-A69A845DAF81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30A995E7-43B0-4739-9BE3-A69A845DAF81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30A995E7-43B0-4739-9BE3-A69A845DAF81}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ED1E07E6-F666-4ACD-9687-B791A9713F1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ED1E07E6-F666-4ACD-9687-B791A9713F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ED1E07E6-F666-4ACD-9687-B791A9713F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ED1E07E6-F666-4ACD-9687-B791A9713F1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85BCCC9C-E96C-4315-AC8D-79EE7B070511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85BCCC9C-E96C-4315-AC8D-79EE7B070511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85BCCC9C-E96C-4315-AC8D-79EE7B070511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85BCCC9C-E96C-4315-AC8D-79EE7B070511}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
