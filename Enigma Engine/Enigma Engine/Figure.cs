@@ -12,7 +12,7 @@ namespace Enigma
     {
         //its a shit-code dont look at it
 
-        public void DrawCube()
+        /*public void DrawCube()
         {
             GeometricPrimitive cube = GeometricPrimitive.Cube.New(RuntimeLevel.Graphics);
             cube.Draw(new GraphicsContext(RuntimeLevel.Graphics), new EffectInstance(
@@ -49,6 +49,6 @@ namespace Enigma
 
             // Draw the vertices
             commandList.Draw(vertexCount);
-        }
+        }*/
     }
 }

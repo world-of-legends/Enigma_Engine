@@ -1,4 +1,5 @@
-﻿using Stride.Graphics;
+﻿using Stride.Engine;
+using Stride.Graphics;
 using System;
 using System.Collections.Generic;
 
@@ -10,8 +11,8 @@ namespace Enigma
     public static class RuntimeLevel
     {
         public static List<BaseEntity> entities = new List<BaseEntity>();
-        public static GraphicsDevice Graphics { set; get; }
-        public static CommandList ListCommand { set; get; }
+        public static Renderer renderer;
+        public static Game game;
 
         public static void LoadFrom(string path)
         {
@@ -20,8 +21,9 @@ namespace Enigma
 
         public static void Start()
         {
-            Graphics = GraphicsDevice.New(DeviceCreationFlags.None, GraphicsProfile.Level_10_0);
-            ListCommand = CommandList.New(Graphics);
+            game = new Game();
+            game.Run();
+            renderer = new Renderer(game.GraphicsDevice);
         }
 
         public static T GetEntity<T>(string name) where T : BaseEntity

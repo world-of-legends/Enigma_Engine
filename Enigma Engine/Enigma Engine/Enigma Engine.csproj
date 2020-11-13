@@ -1,10 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Enigma</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="AssimpNet" Version="4.1.0" />
     <PackageReference Include="Stride.Engine" Version="4.0.0.1-beta04-1317" />
     <PackageReference Include="Stride.Video" Version="4.0.0.1-beta04-1317" />
     <PackageReference Include="Stride.Physics" Version="4.0.0.1-beta04-1317" />

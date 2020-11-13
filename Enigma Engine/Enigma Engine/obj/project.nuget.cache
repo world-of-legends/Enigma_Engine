@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "l5aYP7wPGX+9R6c/7OxiZFYcPP0iBz2HrWxT6sCddnec3lsahmiC8Olf4H1lRrhy7+jUQre2Bv3MdWIyJB7kpg==",
+  "dgSpecHash": "nMiByf34qE6C708dO/9G8XLurZQQb/dZcBAh1AIIyk5xi6GxIGttlaDnUh8BUEXtla6v7mwkrKfri7hhUS+p1Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\Desktop\\World of Legends\\Enigma_Engine\\Enigma Engine\\Enigma Engine\\Enigma Engine.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\assimpnet\\4.1.0\\assimpnet.4.1.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\ffmpeg.autogen\\3.4.0.2\\ffmpeg.autogen.3.4.0.2.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
