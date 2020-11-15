@@ -51,25 +51,46 @@ namespace Enigma
                         };
                         // add the mesh to the model
                         model.Meshes.Add(customMesh);
-
-                        // Create a material (eg with red diffuse color).
-                        /*var materialDescription = new MaterialDescriptor
-                        {
-                            Attributes =
-                            {
-                                DiffuseModel = new MaterialDiffuseLambertModelFeature(),
-                                Diffuse = new MaterialDiffuseMapFeature(new ComputeColor 
-                                { Key = MaterialKeys.DiffuseValue })
-                            }
-                        };
-                        var material = Material.New(gd, materialDescription);
-                        material.Parameters[0].Set(MaterialKeys.DiffuseValue, Color.Red);
-                        model.Materials.Add(0, material);*/
                     }
                 }
+            }
+            if (mdl.HasAnimations)
+            {
+                //pass
+            }
+            if (mdl.HasCameras)
+            {
+                //pass
+            }
+            if (mdl.HasLights)
+            {
+                //pass
+            }
+            if (mdl.HasMaterials)
+            {
+                foreach (Material mat in mdl.Materials)
+                {
+                    Color4 diffuse = ConvertColor(mat.ColorDiffuse), ambient = ConvertColor(mat.ColorAmbient);
+                    var materialDescription = new MaterialDescriptor
+                    {
+                        Attributes =
+                            {
+                                DiffuseModel = new MaterialDiffuseLambertModelFeature(),
+                                Diffuse = new MaterialDiffuseMapFeature(new ComputeColor
+                                { Key = MaterialKeys.DiffuseValue, Value = diffuse })
+                            }
+                    };
+                    Stride.Rendering.Material material = Stride.Rendering.Material.New(gd, materialDescription);
+                    model.Materials.Insert(0, material);
+                }
+            }
+            if (mdl.HasTextures)
+            {
+                //pass
             }
         }
 
         public static Vector3 ConvertVector(Vector3D vec) => new Vector3(vec.X, vec.Y, vec.Z);
+        public static Color4 ConvertColor(Color4D color) => new Color4(color.R, color.G, color.B, color.A);
     }
 }
