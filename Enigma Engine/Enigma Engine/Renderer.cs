@@ -5,6 +5,7 @@ using Assimp;
 using Stride.Core.Mathematics;
 using Stride.Rendering.Materials;
 using Stride.Rendering.Materials.ComputeColors;
+using Stride.Rendering.Lights;
 
 namespace Enigma
 {
@@ -21,9 +22,11 @@ namespace Enigma
             assimp = new AssimpContext();
         }
 
-        public void LoadModel(string modelPath, ref Stride.Rendering.Model model)
+        public void LoadModel(string modelPath, out Stride.Engine.Entity entity)
         {
             Scene mdl = assimp.ImportFile(modelPath);
+            Stride.Rendering.Model model = new Stride.Rendering.Model();
+            entity = new Stride.Engine.Entity();
             if (mdl.HasMeshes)
             {
                 foreach (Mesh mesh in mdl.Meshes)
@@ -60,11 +63,30 @@ namespace Enigma
             }
             if (mdl.HasCameras)
             {
-                //pass
+                foreach (Camera camera in mdl.Cameras)
+                {
+                }
             }
             if (mdl.HasLights)
             {
-                //pass
+                foreach (Light light in mdl.Lights)
+                {
+                    switch (light.LightType)
+                    {
+                        case LightSourceType.Undefined:
+                            break;
+                        case LightSourceType.Directional:
+                            break;
+                        case LightSourceType.Point:
+                            break;
+                        case LightSourceType.Spot:
+                            break;
+                        case LightSourceType.Ambient:
+                            break;
+                        case LightSourceType.Area:
+                            break;
+                    }
+                }
             }
             if (mdl.HasMaterials)
             {
@@ -88,6 +110,7 @@ namespace Enigma
             {
                 //pass
             }
+            entity.Add(new Stride.Engine.ModelComponent(model));
         }
 
         public static Vector3 ConvertVector(Vector3D vec) => new Vector3(vec.X, vec.Y, vec.Z);
