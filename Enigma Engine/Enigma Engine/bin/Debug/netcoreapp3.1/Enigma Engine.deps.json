@@ -10,7 +10,6 @@
         "dependencies": {
           "AssimpNet": "4.1.0",
           "Stride.Engine": "4.0.0.1-beta04-1317",
-          "Stride.Navigation": "4.0.0.1-beta04-1317",
           "Stride.Particles": "4.0.0.1-beta04-1317",
           "Stride.Physics": "4.0.0.1-beta04-1317",
           "Stride.UI": "4.0.0.1-beta04-1317",
@@ -575,31 +574,6 @@
             "fileVersion": "4.0.0.1"
           },
           "runtimes/win/lib/netstandard2.0/Stride.Native.dll": {
-            "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "4.0.0.1",
-            "fileVersion": "4.0.0.1"
-          }
-        }
-      },
-      "Stride.Navigation/4.0.0.1-beta04-1317": {
-        "dependencies": {
-          "Stride.Physics": "4.0.0.1-beta04-1317"
-        },
-        "runtimeTargets": {
-          "runtimes/linux/lib/netstandard2.0/Stride.Navigation.dll": {
-            "rid": "linux",
-            "assetType": "runtime",
-            "assemblyVersion": "4.0.0.1",
-            "fileVersion": "4.0.0.1"
-          },
-          "runtimes/osx/lib/netstandard2.0/Stride.Navigation.dll": {
-            "rid": "osx",
-            "assetType": "runtime",
-            "assemblyVersion": "4.0.0.1",
-            "fileVersion": "4.0.0.1"
-          },
-          "runtimes/win/lib/netstandard2.0/Stride.Navigation.dll": {
             "rid": "win",
             "assetType": "runtime",
             "assemblyVersion": "4.0.0.1",
@@ -1805,13 +1779,6 @@
       "sha512": "sha512-cA3ka9KRrI7ijSKeOpmss8EguTeWGSPBuqnCve1thqwmRyRxyOMEpMT7DzqSuSsHaxEr0XnacqzTvOIOicfclA==",
       "path": "stride.native/4.0.0.1-beta04-1317",
       "hashPath": "stride.native.4.0.0.1-beta04-1317.nupkg.sha512"
-    },
-    "Stride.Navigation/4.0.0.1-beta04-1317": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-2clLAlFfEvXKntze+aypgNjg4xbZrZ+7MjaWjTmYTOSP2aSdV8L8VQDChG9xeBgT5N0DRBNSwx7gasDmlg8b7g==",
-      "path": "stride.navigation/4.0.0.1-beta04-1317",
-      "hashPath": "stride.navigation.4.0.0.1-beta04-1317.nupkg.sha512"
     },
     "Stride.OpenTK/1.0.3": {
       "type": "package",

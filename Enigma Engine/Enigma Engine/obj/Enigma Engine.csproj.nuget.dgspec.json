@@ -54,10 +54,6 @@
               "target": "Package",
               "version": "[4.0.0.1-beta04-1317, )"
             },
-            "Stride.Navigation": {
-              "target": "Package",
-              "version": "[4.0.0.1-beta04-1317, )"
-            },
             "Stride.Particles": {
               "target": "Package",
               "version": "[4.0.0.1-beta04-1317, )"

@@ -10,13 +10,14 @@ namespace Enigma
 {
     public class Figure
     {
+        private Renderer renderer => RuntimeLevel.renderer;
         //its a shit-code dont look at it
 
-        /*public void DrawCube()
+        public void DrawCube()
         {
-            GeometricPrimitive cube = GeometricPrimitive.Cube.New(RuntimeLevel.Graphics);
-            cube.Draw(new GraphicsContext(RuntimeLevel.Graphics), new EffectInstance(
-                new Effect(RuntimeLevel.Graphics, new Stride.Shaders.EffectBytecode())));
+            GeometricPrimitive cube = GeometricPrimitive.Cube.New(renderer.gd);
+            cube.Draw(new GraphicsContext(renderer.gd), new EffectInstance(
+                new Effect(renderer.gd, new Stride.Shaders.EffectBytecode())));
         }
 
         /// <summary>
@@ -30,18 +31,18 @@ namespace Enigma
 
             // Create the vertex buffer from an array of vertices
             VertexPositionTexture[] vertices = new VertexPositionTexture[vertexCount];
-            Buffer<VertexPositionTexture> vertexBuffer = Buffer.Vertex.New(RuntimeLevel.Graphics, vertices);
+            Buffer<VertexPositionTexture> vertexBuffer = Buffer.Vertex.New(renderer.gd, vertices);
 
             // Create a vertex buffer binding
             VertexBufferBinding vertexBufferBinding = new VertexBufferBinding(vertexBuffer, layout, vertexCount);
 
             PipelineStateDescription pipelineStateDescription = new PipelineStateDescription();
-            PipelineState pipelineState = PipelineState.New(RuntimeLevel.Graphics, ref pipelineStateDescription);
+            PipelineState pipelineState = PipelineState.New(renderer.gd, ref pipelineStateDescription);
             pipelineStateDescription.InputElements = new VertexBufferBinding[] { vertexBufferBinding }.CreateInputElements();
             pipelineStateDescription.PrimitiveType = PrimitiveType.TriangleStrip;
 
             // Create and set a PipelineState object
-            CommandList commandList = RuntimeLevel.ListCommand;
+            CommandList commandList = renderer.cl;
             commandList.SetPipelineState(pipelineState);
 
             // Bind the vertex buffer to the pipeline
@@ -49,6 +50,6 @@ namespace Enigma
 
             // Draw the vertices
             commandList.Draw(vertexCount);
-        }*/
+        }
     }
 }

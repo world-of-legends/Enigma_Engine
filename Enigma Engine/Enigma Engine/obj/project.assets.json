@@ -746,29 +746,6 @@
           }
         }
       },
-      "Stride.Navigation/4.0.0.1-beta04-1317": {
-        "type": "package",
-        "dependencies": {
-          "Stride.Physics": "4.0.0.1-beta04-1317"
-        },
-        "compile": {
-          "ref/netstandard2.0/Stride.Navigation.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/linux/lib/netstandard2.0/Stride.Navigation.dll": {
-            "assetType": "runtime",
-            "rid": "linux"
-          },
-          "runtimes/osx/lib/netstandard2.0/Stride.Navigation.dll": {
-            "assetType": "runtime",
-            "rid": "osx"
-          },
-          "runtimes/win/lib/netstandard2.0/Stride.Navigation.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
       "Stride.OpenTK/1.0.3": {
         "type": "package",
         "dependencies": {
@@ -3440,72 +3417,6 @@
         "runtimes/win/lib/netstandard2.0/x86/libstride.dll",
         "stride.native.4.0.0.1-beta04-1317.nupkg.sha512",
         "stride.native.nuspec"
-      ]
-    },
-    "Stride.Navigation/4.0.0.1-beta04-1317": {
-      "sha512": "2clLAlFfEvXKntze+aypgNjg4xbZrZ+7MjaWjTmYTOSP2aSdV8L8VQDChG9xeBgT5N0DRBNSwx7gasDmlg8b7g==",
-      "type": "package",
-      "path": "stride.navigation/4.0.0.1-beta04-1317",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "nuget-icon.png",
-        "ref/monoandroid81/Stride.Navigation.dll",
-        "ref/monoandroid81/Stride.Navigation.xml",
-        "ref/netstandard2.0/Stride.Navigation.dll",
-        "ref/netstandard2.0/Stride.Navigation.xml",
-        "ref/uap10.0.16299/Stride.Navigation.dll",
-        "ref/uap10.0.16299/Stride.Navigation.xml",
-        "ref/xamarinios10/Stride.Navigation.dll",
-        "ref/xamarinios10/Stride.Navigation.xml",
-        "runtimes/any/lib/monoandroid81/Stride.Navigation.dll",
-        "runtimes/any/lib/monoandroid81/Stride.Navigation.pdb",
-        "runtimes/any/lib/monoandroid81/Stride.Navigation.ssdeps",
-        "runtimes/any/lib/monoandroid81/Stride.Navigation.usrdoc",
-        "runtimes/any/lib/monoandroid81/Stride.Navigation.xml",
-        "runtimes/any/lib/monoandroid81/arm64-v8a/libstridenavigation.so",
-        "runtimes/any/lib/monoandroid81/armeabi-v7a/libstridenavigation.so",
-        "runtimes/any/lib/monoandroid81/x86/libstridenavigation.so",
-        "runtimes/any/lib/monoandroid81/x86_64/libstridenavigation.so",
-        "runtimes/any/lib/uap10.0.16299/ARM/libstridenavigation.dll",
-        "runtimes/any/lib/uap10.0.16299/Stride.Navigation.dll",
-        "runtimes/any/lib/uap10.0.16299/Stride.Navigation.pdb",
-        "runtimes/any/lib/uap10.0.16299/Stride.Navigation.pri",
-        "runtimes/any/lib/uap10.0.16299/Stride.Navigation.ssdeps",
-        "runtimes/any/lib/uap10.0.16299/Stride.Navigation.usrdoc",
-        "runtimes/any/lib/uap10.0.16299/Stride.Navigation.xml",
-        "runtimes/any/lib/uap10.0.16299/x64/libstridenavigation.dll",
-        "runtimes/any/lib/uap10.0.16299/x86/libstridenavigation.dll",
-        "runtimes/any/lib/xamarinios10/Stride.Navigation.dll",
-        "runtimes/any/lib/xamarinios10/Stride.Navigation.pdb",
-        "runtimes/any/lib/xamarinios10/Stride.Navigation.ssdeps",
-        "runtimes/any/lib/xamarinios10/Stride.Navigation.usrdoc",
-        "runtimes/any/lib/xamarinios10/Stride.Navigation.xml",
-        "runtimes/any/lib/xamarinios10/bin/Release/xamarinios10/any/libDetour.a",
-        "runtimes/any/lib/xamarinios10/bin/Release/xamarinios10/any/libNativePath.a",
-        "runtimes/any/lib/xamarinios10/bin/Release/xamarinios10/any/libRecast.a",
-        "runtimes/any/lib/xamarinios10/libstridenavigation.a",
-        "runtimes/linux/lib/netstandard2.0/Stride.Navigation.dll",
-        "runtimes/linux/lib/netstandard2.0/Stride.Navigation.pdb",
-        "runtimes/linux/lib/netstandard2.0/Stride.Navigation.ssdeps",
-        "runtimes/linux/lib/netstandard2.0/Stride.Navigation.usrdoc",
-        "runtimes/linux/lib/netstandard2.0/Stride.Navigation.xml",
-        "runtimes/linux/lib/netstandard2.0/libstridenavigation.so",
-        "runtimes/osx/lib/netstandard2.0/Stride.Navigation.dll",
-        "runtimes/osx/lib/netstandard2.0/Stride.Navigation.pdb",
-        "runtimes/osx/lib/netstandard2.0/Stride.Navigation.ssdeps",
-        "runtimes/osx/lib/netstandard2.0/Stride.Navigation.usrdoc",
-        "runtimes/osx/lib/netstandard2.0/Stride.Navigation.xml",
-        "runtimes/osx/lib/netstandard2.0/libstridenavigation.dylib",
-        "runtimes/win/lib/netstandard2.0/Stride.Navigation.dll",
-        "runtimes/win/lib/netstandard2.0/Stride.Navigation.pdb",
-        "runtimes/win/lib/netstandard2.0/Stride.Navigation.ssdeps",
-        "runtimes/win/lib/netstandard2.0/Stride.Navigation.usrdoc",
-        "runtimes/win/lib/netstandard2.0/Stride.Navigation.xml",
-        "runtimes/win/lib/netstandard2.0/x64/libstridenavigation.dll",
-        "runtimes/win/lib/netstandard2.0/x86/libstridenavigation.dll",
-        "stride.navigation.4.0.0.1-beta04-1317.nupkg.sha512",
-        "stride.navigation.nuspec"
       ]
     },
     "Stride.OpenTK/1.0.3": {
@@ -7815,7 +7726,6 @@
     ".NETCoreApp,Version=v3.1": [
       "AssimpNet >= 4.1.0",
       "Stride.Engine >= 4.0.0.1-beta04-1317",
-      "Stride.Navigation >= 4.0.0.1-beta04-1317",
       "Stride.Particles >= 4.0.0.1-beta04-1317",
       "Stride.Physics >= 4.0.0.1-beta04-1317",
       "Stride.UI >= 4.0.0.1-beta04-1317",
@@ -7874,10 +7784,6 @@
             "version": "[4.1.0, )"
           },
           "Stride.Engine": {
-            "target": "Package",
-            "version": "[4.0.0.1-beta04-1317, )"
-          },
-          "Stride.Navigation": {
             "target": "Package",
             "version": "[4.0.0.1-beta04-1317, )"
           },
